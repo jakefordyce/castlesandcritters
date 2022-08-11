@@ -6,8 +6,8 @@ export default function Home({abilities}) {
   console.log(abilities);
   //console.log(JSON.parse(JSON.stringify(abilities)));
 
-  const abilityDivs = abilities.map(ability => 
-    <div>{ability.name}</div>
+  const abilityDivs = abilities.map((ability, index) => 
+    <div key={index}>{ability.name}</div>
   );
 
   console.log(abilityDivs);
