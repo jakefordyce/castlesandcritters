@@ -15,6 +15,16 @@ a {
   box-sizing: border-box;
 }
 
+.ability {
+  border: solid 1px darkgray;
+  padding: 2px;
+  margin: 2px;
+}
+
+.ability .name {
+  color: #f77;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
@@ -22,5 +32,8 @@ a {
   body {
     color: white;
     background: black;
+  }
+  .ability{
+    background: #111;
   }
 }
