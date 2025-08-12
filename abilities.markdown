@@ -6,8 +6,18 @@ layout: home
 title: Abilities
 ---
 
+<script src="/abilities.js" defer></script>
+
+Filter the list:
+
+<select name="abilities" id="abilities-select">
+    <option value="">--Please choose an option--</option>
+    <option value="self">Self</option>
+    <option value="target">Target</option>
+</select>
+
 {% for ability in site.data.abilities.abilities %}
-<div>
+<div class="ability">
     <div class="ability-name">
     {{ ability.name }}
     </div>
@@ -21,6 +31,9 @@ title: Abilities
     {% endif %}
     <div>
         Actions: {{ ability.actions }}
+    </div>
+    <div class="ability-tags">
+        Tags: {{ ability.tags }}
     </div>
 </div>
 {% endfor %}

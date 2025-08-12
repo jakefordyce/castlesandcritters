@@ -6,7 +6,7 @@
       "cost": 0,
       "type": 1,
       "actions": 1,
-      "weapon": 0
+      "tags": ["Target"]
     },
     {
       "name": "Recover",
@@ -14,7 +14,7 @@
       "cost": 0,
       "type": 1,
       "actions": 1,
-      "weapon": 0,
+      "tags": ["Self"],
       "masteries": [
         {
           "name": "Juggernaut",

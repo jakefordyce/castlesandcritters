@@ -5,6 +5,31 @@
     text-align: center;
 }
 
+.ability {
+    background-color: #555;
+    padding: 20px;
+    margin: 5px;
+    border-radius: 10px;
+}
+
 .ability-name {
     font-size: 1.25em;
+    padding-bottom: 10px;
+}
+
+body {
+    background-color: #333;
+    color: #ddd;
+}
+
+a:link {
+    color: #ddd;
+}
+
+a:visited {
+    color: #ddd;
+}
+
+.hidden {
+    display: none;
 }
