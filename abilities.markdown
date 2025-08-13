@@ -6,7 +6,7 @@ layout: home
 title: Abilities
 ---
 
-<script src="/abilities.js" defer></script>
+<script src="{{ site.baseurl }}/abilities.js" defer></script>
 
 Filter the list:
 
