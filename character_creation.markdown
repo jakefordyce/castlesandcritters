@@ -80,4 +80,4 @@ Armor - Your physical resistance to damage.
 
 Resist - Your resistance to magical damage.
 
-
+Strength - Your ability to do things that require being strong, like kicking down doors or climbing a rope
