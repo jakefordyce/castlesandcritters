@@ -12,6 +12,7 @@ Filter the list:
 
 <select name="abilities" id="abilities-select">
     <option value="">--Please choose an option--</option>
+    <option value="technique">Technique</option>
     <option value="self">Self</option>
     <option value="target">Target</option>
 </select>
@@ -33,7 +34,20 @@ Filter the list:
         Actions: {{ ability.actions }}
     </div>
     <div class="ability-tags">
-        Tags: {{ ability.tags }}
+        Tags:
+        {% for tag in ability.tags %}
+            {{ tag }}
+        {% endfor %}
     </div>
 </div>
+{% for mastery in ability.masteries %}
+<div class="mastery">
+    <div class="mastery-name">
+        {{ mastery.name }}
+    </div>
+    <div class="mastery-text">
+        {{ mastery.text }}
+    </div>
+</div>
+{% endfor %}
 {% endfor %}

@@ -4,9 +4,8 @@
       "name": "Attack",
       "text": "Attack an enemy with your equipped weapon. Damage dealt is based on the weapon used.",
       "cost": 0,
-      "type": 1,
       "actions": 1,
-      "tags": ["Target"]
+      "tags": ["Technique","Target"]
     },
     {
       "name": "Recover",

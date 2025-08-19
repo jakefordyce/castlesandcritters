@@ -17,6 +17,18 @@
     padding-bottom: 10px;
 }
 
+.mastery {
+    background-color: #444;
+    padding: 20px;
+    margin: 5px 5px 5px 15px;
+    border-radius: 10px;
+}
+
+.mastery-name {
+    font-size: 1.25em;
+    padding-bottom: 10px;
+}
+
 body {
     background-color: #333;
     color: #ddd;
