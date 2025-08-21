@@ -53,3 +53,24 @@ For status effects, the dice are rolled against the Armor or Resist and if the d
 For Healing, the dice are rolled and not subtracted by any defense.
 
 Healing, Buffs/DeBuffs, and Status Effects cannot be critical.
+
+
+### Status Effects
+
+Stun/Sleep/Blind etc. are collectively called Status Effects. They affect your character in different ways, limiting what they can do in each case. Each Status Effect will have a duration, after which they will expire on their own. Your character may attempt to recover earlier than that by using their Recover ability.
+
+When a character is affected by a Status Effect, keep track of the power of the effect in case they want to remove it with Recover or a different ability.
+
+A Status effect does not stack with itself. The higher power is used instead. If a character is stunned for 3 power and then another stun affects them with a power of 5, they have a single stun with a power of 5 to dispel, not 8.
+
+Different Status Effects may affect the player at the same time. A character can be stunned and slowed. They would need to recover from each effect separately and can specify which one they are attempting to recover from (unless an ability says it is random).
+
+Stun/Blind - Your character cannot take actions and cannot move.
+
+Sleep - Your character cannot take actions and cannot move, but taking any damage will make the status effect go away.
+
+Slow - Your character moves at 1/2 speed, but can otherwise use their actions as normal.
+
+Silence - Your character cannot cast spells, but can move and use melee attacks.
+
+Disarm - Your character cannot use melee attacks, but can move and cast spells.

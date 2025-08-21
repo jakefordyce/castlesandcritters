@@ -9,15 +9,18 @@
     },
     {
       "name": "Recover",
-      "text": "Attempt to recover from a status effect. Roll 5 + [Spirit] and reduce the remaining power of a status effect by that amount.",
+      "text": "Attempt to recover from a status effect. Roll 1D10 and reduce the remaining power of a status effect by that amount.",
       "cost": 0,
-      "type": 1,
       "actions": 1,
       "tags": ["Self"],
       "masteries": [
         {
           "name": "Juggernaut",
           "text": "Your shield's block is also added to your roll."
+        },
+        {
+          "name": "Resilient",
+          "text": "Your roll is increased by 2."
         }
       ]
     },
@@ -25,11 +28,9 @@
       "name": "Heal",
       "text": "Target recovers [Healing] HP.",
       "cost": 1,
-      "type": 2,
       "actions": 1,
       "range": 1,
-      "school": 3,
-      "requires": "1 Spirit",
+      "tags": ["Spell", "Target", "Self", "Heal"],
       "masteries": [
         {
           "name": "Life Shield",
@@ -41,11 +42,9 @@
       "name": "Protect",
       "text": "Grant the target [Healing] temporary HP. Temporary HP do not stack with subsequent casts.",
       "cost": 0,
-      "type": 2,
       "actions": 1,
       "range": 10,
-      "school": 3,
-      "requires": "1 Spirit",
+      "tags": ["Spell", "Target", "Self", "Heal"],
       "masteries": [
         {
           "name": "Hemostasis",
@@ -57,11 +56,9 @@
       "name": "Protection From Evil",
       "text": "Target gets +1 on all Defenses vs Status Effects and +1 to the power of Recover. This effect stacks with other bonuses to Defenses.",
       "cost": 0,
-      "type": 2,
       "actions": 1,
       "range": 10,
-      "school": 3,
-      "requires": "1 Spirit",
+      "tags": ["Spell", "Target", "Self", "Buff"],
       "masteries": [
         {
           "name": "Unwavering Faith",
@@ -71,13 +68,11 @@
     },
     {
       "name": "Consecrate",
-      "text": "Mark a 3x3 area centered on you. Allies that stand in the area get a +1 on Attack rolls. Lasts 1 hour.",
-      "cost": 0,
-      "type": 2,
-      "actions": 3,
+      "text": "Mark a 3x3 area centered on you. The area stays in place. Allies that stand in the area get a +1 on Luck rolls. Lasts 1 hour.",
+      "cost": 1,
+      "actions": 2,
       "range": 0,
-      "school": 3,
-      "requires": "3 Spirit",
+      "tags": ["Spell", "Self", "Buff", "DeBuff"],
       "masteries": [
         {
           "name": "Holy Ground",
@@ -89,11 +84,9 @@
       "name": "Magic Missile",
       "text": "Fires a bolt of pure magic energy at a target dealing [Magic] Arcane damage.",
       "cost": 0,
-      "type": 2,
       "actions": 1,
       "range": 10,
-      "school": 0,
-      "requires": "1 Intelligence",
+      "tags": ["Spell", "Target", "Arcane"],
       "masteries": [
         {
           "name": "Barrage",
@@ -107,17 +100,15 @@
     },
     {
       "name": "Ray of Frost",
-      "text": "Fires a ray of ice and freezing air at the target dealing [Magic] + [Intelligence] Cold damage.",
+      "text": "Fires a ray of ice and freezing air at the target dealing [Magic] + 1D10 Cold damage.",
       "cost": 0,
-      "type": 2,
       "actions": 2,
       "range": 10,
-      "school": 2,
-      "requires": "1 Intelligence",
+      "tags": ["Spell", "Target", "Cold"],
       "masteries": [
         {
           "name": "Brain Freeze",
-          "text": "The Target's Magic is reduced by 1 until the end of your next turn."
+          "text": "The target's Magic is reduced by 1 until the end of your next turn."
         },
         {
           "name": "Brittle",
@@ -127,13 +118,11 @@
     },
     {
       "name": "Eldritch Blast",
-      "text": "Blasts the target with dark magic dealing 1.5 x [Magic] Shadow damage.",
+      "text": "Blasts the target with dark magic dealing [Magic] + 1D10 Shadow damage.",
       "cost": 0,
-      "type": 2,
       "actions": 2,
       "range": 10,
-      "school": 4,
-      "requires": "1 Intelligence",
+      "tags": ["Spell", "Target", "Shadow"],
       "masteries": [
         {
           "name": "Temporary Insanity",

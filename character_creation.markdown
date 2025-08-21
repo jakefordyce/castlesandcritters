@@ -80,4 +80,10 @@ Armor - Your physical resistance to damage.
 
 Resist - Your resistance to magical damage.
 
-Strength - Your ability to do things that require being strong, like kicking down doors or climbing a rope
+Strength - Your ability to do things that require being strong, like kicking down doors or climbing a rope.
+
+Finesse - Your ability to do things that require finesse, like picking a lock or sneaking around.
+
+Knowledge - This is how likely it is that your character knows something that isn't common knowledge.
+
+Perception - This is how likely it is that your character sees or notices something, like a distant enemy or a change in the pattern on the wall.
