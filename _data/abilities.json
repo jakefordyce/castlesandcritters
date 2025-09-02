@@ -82,7 +82,7 @@
     },
     {
       "name": "Magic Missile",
-      "text": "Fires a bolt of pure magic energy at a target dealing [Magic] Arcane damage.",
+      "text": "Fires a bolt of pure magic energy at a target dealing [Magic] + 1D10 Arcane damage.",
       "cost": 0,
       "actions": 1,
       "range": 10,
@@ -102,7 +102,7 @@
       "name": "Ray of Frost",
       "text": "Fires a ray of ice and freezing air at the target dealing [Magic] + 1D10 Cold damage.",
       "cost": 0,
-      "actions": 2,
+      "actions": 1,
       "range": 10,
       "tags": ["Spell", "Target", "Cold"],
       "masteries": [
@@ -120,7 +120,7 @@
       "name": "Eldritch Blast",
       "text": "Blasts the target with dark magic dealing [Magic] + 1D10 Shadow damage.",
       "cost": 0,
-      "actions": 2,
+      "actions": 1,
       "range": 10,
       "tags": ["Spell", "Target", "Shadow"],
       "masteries": [
@@ -174,7 +174,7 @@
     },
     {
       "name": "Daze",
-      "text": "Roll [Magic] vs the target's Defense. If your roll is higher the target is stunned.",
+      "text": "Roll [Magic] vs the target's Resist. If your roll is higher the target is stunned.",
       "cost": 0,
       "type": 2,
       "actions": 2,
@@ -190,7 +190,7 @@
     },
     {
       "name": "Censure",
-      "text": "Roll [Healing] vs the target's Defense. If your roll is higher the target is stunned.",
+      "text": "Roll [Healing] vs the target's Resist. If your roll is higher the target is stunned.",
       "cost": 0,
       "type": 2,
       "actions": 2,
@@ -200,7 +200,7 @@
       "masteries": [
         {
           "name": "Spirit Shackle",
-          "text": "You can temporarily sacrifice some of your Spirit to increase the power of Censure. You cannot reduce your Spirit below 0. The Spirit returns at the end of your next turn."
+          "text": "You can temporarily sacrifice some of your Healing to increase the power of Censure. Reduce your healing by up to 5 to increase the power of Censure by the same amount. The amount comes back at the end of your next turn."
         }
       ]
     },

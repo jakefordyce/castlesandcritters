@@ -59,6 +59,17 @@ Perception: 0
 
 ### Abilities
 
+<br/>
+<br/>
+
+
+# Level Up
+
+Each time a character levels up, they gain 1 Ability Point. They can spend that point on a new Ability or save it for a later time when they are not in combat.
+
+They gain 2 Health and 1 Energy.
+
+<br/>
 
 # Explanation Of Each Stat
 

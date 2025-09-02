@@ -74,3 +74,14 @@ Slow - Your character moves at 1/2 speed, but can otherwise use their actions as
 Silence - Your character cannot cast spells, but can move and use melee attacks.
 
 Disarm - Your character cannot use melee attacks, but can move and cast spells.
+
+
+### Ongoing Damage/ Ongoing Healing
+
+Ongoing damage is the damage a character takes every round. Unless otherwise specified, the damage is 1 and this happens at the beginning of the turn before any actions are taken. The damage is not affected by any kind of defense unless there is an effect that specifically says that it affects Ongoing Damage.
+
+A character cannot take Ongoing Damage from the same character if the source is the same Abililty. Each application from the same Ability affects the power of the Ongoing Damage instead. Different characters can have Ongoing Damage from the same Ability.
+
+Ex. Crystal applies Bloom under Harper. Each turn, before Harper takes any actions, she is healed for 1 Health. Crystal casts bloom again. The new effect overwrite the old one.
+
+Jake then casts Bloom under Harper. Each turn, Harper is now healed for 2 health.
