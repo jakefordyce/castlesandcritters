@@ -17,11 +17,15 @@ Filter the list:
     <option value="heal">Heal</option>
     <option value="self">Self</option>
     <option value="target">Target</option>
+    <option value="allies">Allies</option>
+    <option value="enemies">Enemies</option>
     <option value="buff">Buff</option>
     <option value="debuff">DeBuff</option>
     <option value="shadow">Shadow</option>
     <option value="arcane">Arcane</option>
     <option value="cold">Cold</option>
+    <option value="shout">Shout</option>
+    <option value="metamagic">Meta Magic</option>
 </select>
 
 {% for ability in site.data.abilities.abilities %}

@@ -947,6 +947,13 @@
       "requires": "1 Intelligence"
     },
     {
+      "name": "Spell Protection",
+      "text": "Your next spell cannot be counterspelled.",
+      "cost": 1,
+      "acitons": 0,
+      "tags": ["MetaMagic"]
+    },
+    {
       "name": "Counterspel",
       "text": "When a nearby enemy attempts to cast a spell that you know, you can negate his spell. If the spell has an energy cost you must pay that energy cost. The target must be within the range of the spell being cast.",
       "type": 4,
@@ -1108,16 +1115,14 @@
     },
     {
       "name": "Shield Wall",
-      "text": "For the next 5 + [Strength] rounds your shield bonus also applies to all adjacent allies.",
+      "text": "For the next 10 rounds your shield bonus also applies to all adjacent allies.",
       "cost": 2,
-      "type": 1,
       "actions": 1,
-      "weapon": 1,
-      "requires": "2 Strength",
+      "tags": ["Allies"],
       "masteries": [
         {
           "name": "Obstruction",
-          "text": "The shield bonus also applies to allies' Dodge."
+          "text": "The shield bonus also applies to allies' Resist."
         },
         {
           "name": "Moving Formation",
@@ -1351,6 +1356,50 @@
           "text": "The power of your next Chain Lightning is increased by 1 if it deals damage to at least 2 targets."
         }
       ]
+    },
+    {
+      "name": "War Cry",
+      "text": "All allies within 5 squares get +1 to Attack for 10 turns.",
+      "cost": 0,
+      "actions": 1,
+      "tags": ["Self", "Shout", "Allies"]
+    },
+    {
+      "name": "Intimidating Shout",
+      "text": "All enemies within 5 squares have their initiative reduced by 10.",
+      "cost": 0,
+      "actions": 1,
+      "tags": ["Shout", "Enemies"]
+    },
+    {
+      "name": "Blink",
+      "text": "Teleport up to 6 squares away.",
+      "cost": 0,
+      "actions": 1,
+      "range": 6,
+      "tags": ["Spell", "Self", "Arcane"],
+      "masteries": [
+        {
+          "name": "After Image",
+          "text": "After using Blink, the miss range of attacks against you is increased by 1 until the end of your next turn."
+        }
+      ]
+    },
+    {
+      "name": "Chaos Bolt",
+      "text": "Fires a giant bolt of chaotic energy at a target dealing [Magic] + 1D10 Shadow damage. Ignores any Resist.",
+      "cost": 1,
+      "actions": 1,
+      "range": 10,
+      "tags": ["Spell", "Target", "Shadow"]
+    },
+    {
+      "name": "Reaping Strike",
+      "text": "Deals [Attack] damage. Successful attacks against the target heal the attacker for 1.",
+      "cost": 0,
+      "actions": 1,
+      "range": 1,
+      "tags": ["Technique", "Target"]
     }
   ]
 }
