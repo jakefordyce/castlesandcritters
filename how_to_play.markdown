@@ -85,3 +85,79 @@ A character cannot take Ongoing Damage from the same character if the source is 
 Ex. Crystal applies Bloom under Harper. Each turn, before Harper takes any actions, she is healed for 1 Health. Crystal casts bloom again. The new effect overwrite the old one.
 
 Jake then casts Bloom under Harper. Each turn, Harper is now healed for 2 health.
+
+### Initiative Changes
+
+There are certian Abilities that raise or lower a target's iniatiative. These changes can cause a target to gain or lose a turn.
+
+If a target's Initiative is increased over 20, then 20 is reduced. They then take 2 actions on the next round, 1 at the increased initiative and 1 at the -20 value.
+
+Ex:
+
+Round 1
+
+Harper - 15 Initiative
+
+Jake - 10 Initiative
+
+Orc - 8 Initiative
+
+Harper gains 10 Iniative
+
+<br/>
+
+Round 2
+
+Harper - 25 Initiative
+
+Jake - 10 Iniative
+
+Orc - 8 Iniative
+
+Harper - 5 Initiative
+
+Harper gains 10 initiative
+
+<br/>
+
+Round 3
+
+Harper - 15 Initiative
+
+Jake - 10 Iniative
+
+Orc - 8 Initiative
+
+<br/>
+
+If a target's initiative is reduced to below 0, then 20 is added and their next turn is skipped. They still take an turn on the current round.
+
+ex:
+
+Round 1
+
+Harper - 15 Initiative
+
+Jake - 10 Initiative
+
+Orc - 8 Initiative
+
+The orc loses 10 Initiative
+
+<br/>
+
+Round 2
+
+Harper - 15 Initiative
+
+Jake - 10 Initiative
+
+<br/>
+
+Round 3
+
+Orc - 18 Initiative
+
+Harper - 15 Initiative
+
+Jake - 10 Initiative

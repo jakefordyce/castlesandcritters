@@ -49,6 +49,14 @@
         {
           "name": "Hemostasis",
           "text": "While the temporary HP exist the target will ignore 1 point of ongoing damage each round."
+        },
+        {
+          "name": "Protective Bubble",
+          "text": "While the temporary HP exist the target has +1 armor."
+        },
+        {
+          "name": "Reflective Bubble",
+          "text": "While the temporary HP exist the target reflects 1 damage at each successful."
         }
       ]
     },
@@ -127,6 +135,10 @@
         {
           "name": "Temporary Insanity",
           "text": "If you score a critical hit with Eldritch Blast the target is also stunned. The power of the stun is equal to the damage dealt by the spell."
+        },
+        {
+          "name": "Vampiric Touch",
+          "text": "You are healed for 1 if Eldritch Blast does damage to its target."
         }
       ]
     },
@@ -289,31 +301,26 @@
     },
     {
       "name": "Flurry",
-      "text": "Attack twice for [Precision] damage.",
-      "cost": 1,
-      "type": 1,
+      "text": "Attack twice for [Attack] damage.",
+      "cost": 0,
       "actions": 1,
-      "weapon": 1,
-      "requires": "2 Agility",
       "masteries": [
         {
           "name": "Overwhelm",
-          "text": "Your attacks ignore 1 Defense against any enemies hit by Flurry until the end of your next turn. This effect stacks"
+          "text": "Your attacks ignore 1 Armor against any enemies hit by Flurry until the end of your next turn. This effect stacks"
         }
       ]
     },
     {
       "name": "Slam",
-      "text": "Attack for [Might] damage. If successful the target is also knocked back 1 square.",
+      "text": "Attack for [Attack] damage. If successful the target is also knocked back 1 square.",
       "cost": 0,
-      "type": 1,
       "actions": 1,
-      "weapon": 1,
-      "requires": "1 Strength",
+      "tags": ["Target", "Technique"],
       "masteries": [
         {
           "name": "Devastating Slam",
-          "text": "Slam also ignores 1 Block."
+          "text": "Slam also ignores 1 Armor."
         },
         {
           "name": "Unrelenting",
@@ -323,12 +330,10 @@
     },
     {
       "name": "Cleave",
-      "text": "Attack all enemies in front of you for [Might] damage.",
-      "cost": 1,
-      "type": 1,
+      "text": "Attack all enemies in front of you for [Attack] damage.",
+      "cost": 0,
       "actions": 1,
-      "weapon": 1,
-      "requires": "2 Strength",
+      "tags": ["Enemies", "Technique"],
       "masteries": [
         {
           "name": "Heavy Swing",
@@ -338,16 +343,18 @@
     },
     {
       "name": "Whirlwind",
-      "text": "Attack all adjacent enemies for [Might] damage.",
+      "text": "Attack all adjacent enemies for [Attack] damage.",
       "cost": 1,
-      "type": 1,
-      "actions": 2,
-      "weapon": 1,
-      "requires": "3 Strength",
+      "actions": 1,
+      "tags": ["Enemies", "Technique"],
       "masteries": [
         {
           "name": "Bladestorm",
           "text": "During your whirlwind you can move up to 2 squares. The whirlwind will hit any enemy that was adjacent to you on any of the squares you occupied during your attack."
+        },
+        {
+          "name": "Blade Flurry",
+          "text": "The damage of Whirlwind is increased by the number of targets damaged by Cleave, up to a +5."
         }
       ]
     },
@@ -452,13 +459,13 @@
     },
     {
       "name": "Lay on Hands",
-      "text": "Touch a target transferring your HP to them. You choose how much HP to transfer. The amount transferred in one use of this ability cannot exceed your maximum HP. This healing ignores magic dampening.",
+      "text": "Touch a target transferring your HP to them. You choose how much HP to transfer. The amount transferred in one day cannot exceed your maximum HP.",
       "type": 4,
-      "requires": "1 Spirit",
+      "tags": ["Target"],
       "masteries": [
         {
           "name": "Favored by the Gods",
-          "text": "When you deal damage the healing of your next Lay on Hands is increased by 1. Inclusive."
+          "text": "When you deal damage the healing of your next Lay on Hands is increased by 1. This effect stacks up to +5."
         },
         {
           "name": "Guardian Angel",
@@ -466,7 +473,7 @@
         },
         {
           "name": "Lingering Faith",
-          "text": "The target also receives 1 ongoing healing for the next 2 rounds. The healing occurs at the beginning of the target's turn. Inclusive."
+          "text": "The target also receives 1 ongoing healing for the next 2 rounds. The healing occurs at the beginning of the target's turn before any ongoing damage."
         }
       ]
     },
@@ -489,11 +496,8 @@
     {
       "name": "Charge",
       "text": "Move up to 5 squares in a straight line to an enemy and attack them with a melee weapon.",
-      "cost": 1,
-      "type": 1,
+      "cost": 0,
       "actions": 1,
-      "weapon": 1,
-      "requires": "1 Strength or 1 Agility",
       "masteries": [
         {
           "name": "Furious Charge",
@@ -501,7 +505,7 @@
         },
         {
           "name": "Bloodlust",
-          "text": "Your first charge in each combat has no Energy cost. Inclusive."
+          "text": "Your first charge in each combat refunds the action spent if it deals damage."
         }
       ]
     },
@@ -1400,6 +1404,59 @@
       "actions": 1,
       "range": 1,
       "tags": ["Technique", "Target"]
+    },
+    {
+      "name": "Quick Strike",
+      "text": "Deals [Attack] damage. Successful attacks grant you 10 iniative.",
+      "cost": 0,
+      "actions": 1,
+      "range": 1,
+      "tags": ["Technique", "Target"]
+    },
+    {
+      "name": "Burning Hands",
+      "text": "Fires a small explosion of fire from your hands, dealing [Magic] Fire damage to all in a 2x2 area.",
+      "cost": 0,
+      "actions": 1,
+      "range": 2,
+      "tags": ["Spell", "Enemies", "Fire"]
+    },
+    {
+      "name": "Fireball",
+      "text": "Throws a ball of fire that explodes, dealing [Magic] + 1D10 Fire damage to all in a 5x5 area.",
+      "cost": 2,
+      "actions": 2,
+      "range": 2,
+      "tags": ["Spell", "Enemies", "Fire"],
+      "masteries": [
+        {
+          "name": "Overheat",
+          "text": "Each cast of Burning Hands reduces the cost of Fireball by 1. The cost cannot be reduced below 0."
+        }
+      ]
+    },
+    {
+      "name": "Temporal Burst",
+      "text": "All enemies in a 5x5 area lost 1 action on their next turn.",
+      "cost": 1,
+      "actions": 2,
+      "range": 10,
+      "tags": ["Spell", "Enemies", "Arcane"]
+    },
+    {
+      "name": "Heroic Shout",
+      "text": "All allies within 5 squares get an additional action on their next turn.",
+      "cost": 1,
+      "actions": 2,
+      "tags": ["Self", "Shout", "Allies"]
+    },
+    {
+      "name": "Holy Nova",
+      "text": "All allies within 5 squares are healed for [Healing].",
+      "cost": 2,
+      "actions": 2,
+      "range": 10,
+      "tags": ["Spell", "Allies", "Holy", "Self"]
     }
   ]
 }
