@@ -2,14 +2,14 @@
   "abilities": [
     {
       "name": "Attack",
-      "text": "Attack an enemy with your equipped weapon. Damage dealt is based on the weapon used.",
+      "text": "Attack an enemy with your equipped weapon. Damage dealt is based on the weapon used. All characters start with this Ability. Use 1D4 if an Attack stat isn't listed on the item the character is holding or if the character is unarmed.",
       "cost": 0,
       "actions": 1,
       "tags": ["Technique","Target"]
     },
     {
       "name": "Recover",
-      "text": "Attempt to recover from a status effect. Roll 1D10 and reduce the remaining power of a status effect by that amount.",
+      "text": "Attempt to recover from a status effect. Roll 1D10 and reduce the remaining power of a status effect by that amount. All characters start with this Ability.",
       "cost": 0,
       "actions": 1,
       "tags": ["Self"],
@@ -144,17 +144,15 @@
     },
     {
       "name": "Harm",
-      "text": "Deals [Healing] Shadow damage.",
+      "text": "Deals [Healing] +1D10 Shadow damage.",
       "cost": 0,
-      "type": 2,
       "actions": 1,
       "range": 1,
-      "school": 4,
-      "requires": "1 Spirit",
+      "tags": ["Spell", "Target", "Shadow", "Touch"],
       "masteries": [
         {
           "name": "Transfer Harm",
-          "text": "When you heal someone the power of your next Harm spell is increased by 1 for each 5 healing that was done. This bonus cannot exceed your [Healing]."
+          "text": "When you heal someone the power of your next Harm spell is increased by 1 for each 5 healing that was done, up to +5."
         }
       ]
     },
@@ -253,11 +251,10 @@
     },
     {
       "name": "Second Wind",
-      "text": "Recover 5 + [Spirit] HP. You can only use this ability once per battle.",
+      "text": "Recover 1D6 x level HP. You can only use this ability once per battle.",
       "cost": 1,
-      "type": 1,
       "actions": 1,
-      "weapon": 0,
+      "tags": ["Self"],
       "masteries": [
         {
           "name": "Comeback",
@@ -271,12 +268,10 @@
     },
     {
       "name": "Clobber",
-      "text": "Roll [Might] vs target's Defense. If successful the target is stunned.",
+      "text": "Roll [Attack] vs target's Armor. If successful the target is stunned.",
       "cost": 1,
-      "type": 1,
       "actions": 1,
-      "weapon": 1,
-      "requires": "2 Strength",
+      "tags": ["Target", "Technique"],
       "masteries": [
         {
           "name": "Bully",
@@ -286,12 +281,10 @@
     },
     {
       "name": "Heroic Strike",
-      "text": "Attack for 1.5 x [Might] damage.",
-      "cost": 1,
-      "type": 1,
+      "text": "Attack for [Attack] + 1D10 damage.",
+      "cost": 0,
       "actions": 1,
-      "weapon": 1,
-      "requires": "2 Strength",
+      "tags": ["Target", "Technique"],
       "masteries": [
         {
           "name": "Do or Die",
@@ -304,6 +297,7 @@
       "text": "Attack twice for [Attack] damage.",
       "cost": 0,
       "actions": 1,
+      "tags": ["Target", "Technique"],
       "masteries": [
         {
           "name": "Overwhelm",
@@ -432,22 +426,21 @@
     },
     {
       "name": "Go For the Throat",
-      "text": "Critical range of all Might based attacks increased by 2.",
-      "type": 3
+      "text": "Critical range of all Techniques increased by 2.",
+      "tags": ["Passive"]
     },
     {
       "name": "Power Attack",
-      "text": "You can add up to your [Strength] score to the Might of any attack but for each point added you must roll an additional Attack roll. If any of the Attack rolls from this attack result in a miss then the attack misses. Only the first roll can grant a critical hit.",
-      "type": 4,
-      "requires": "1 Strength",
+      "text": "You can add up to 5 to the power of any attack but for each point added you must roll an additional Luck roll. If any of the Luck rolls from this attack result in a miss then the attack misses. Only the first roll can grant a critical hit.",
+      "tags": ["Talent"],
       "masteries": [
         {
           "name": "Focused Rage",
-          "text": "If Power Attack is used for an attack that costs Energy, the miss range of all Attack rolls for that attack are reduced by 1. Inclusive."
+          "text": "If Power Attack is used for an attack that costs Energy, the miss range of all Luck rolls for that attack are reduced by 1."
         },
         {
           "name": "Follow Through",
-          "text": "The Might of your next attack is increased by 1 for each 20 rolled during the additional Attack rolls of a Power Attack. Inclusive."
+          "text": "The Attack of your next attack is increased by 1 for each 20 rolled during the additional Luck rolls of a Power Attack."
         }
       ]
     },
@@ -498,6 +491,7 @@
       "text": "Move up to 5 squares in a straight line to an enemy and attack them with a melee weapon.",
       "cost": 0,
       "actions": 1,
+      "tags": ["Target", "Technique"],
       "masteries": [
         {
           "name": "Furious Charge",
@@ -1457,6 +1451,50 @@
       "actions": 2,
       "range": 10,
       "tags": ["Spell", "Allies", "Holy", "Self"]
+    },
+    {
+      "name": "Smart",
+      "text": "Magic increased by 1.",
+      "tags": ["Passive"]
+    },
+    {
+      "name": "Athletic",
+      "text": "Attack increased by 1.",
+      "tags": ["Passive"]
+    },
+    {
+      "name": "Caring",
+      "text": "Healing increased by 1.",
+      "tags": ["Passive"]
+    },
+    {
+      "name": "Brawny",
+      "text": "Attack increased by 2. Magic and Healing decreased by 1.",
+      "tags": ["Passive"]
+    },
+    {
+      "name": "Bookworm",
+      "text": "Magic increased by 2. Attack and Healing decreased by 1.",
+      "tags": ["Passive"]
+    },
+    {
+      "name": "Naive",
+      "text": "Healing increased by 2. Attack and Magic decreased by 1.",
+      "tags": ["Passive"]
+    },
+    {
+      "name": "Summon Skeleton",
+      "text": "Summons a skeleton with [Magic] Health. It can be instructed to attack or move as a standard action. The attack deals [Magic] damage and it moves 5 squares.",
+      "cost": 2,
+      "actions": 2,
+      "range": 10,
+      "tags": ["Spell", "Summon", "Shadow"],
+      "masteries": [
+        {
+          "name": "Armored Skeleton",
+          "text": "The summoned skeleton now has 2 Armor."
+        }
+      ]
     }
   ]
 }

@@ -14,11 +14,14 @@ Filter the list:
     <option value="">--Please choose an option--</option>
     <option value="technique">Technique</option>
     <option value="spell">Spell</option>
+    <option value="passive">Passive</option>
+    <option value="talent">Talent</option>
     <option value="heal">Heal</option>
     <option value="self">Self</option>
     <option value="target">Target</option>
     <option value="allies">Allies</option>
     <option value="enemies">Enemies</option>
+    <option value="touch">Touch</option>
     <option value="buff">Buff</option>
     <option value="debuff">DeBuff</option>
     <option value="shadow">Shadow</option>
@@ -42,9 +45,11 @@ Filter the list:
             Cost: {{ ability.cost }}
         </div>
         {% endif %}
+        {% if ability.actions > 0 %}
         <div>
             Actions: {{ ability.actions }}
         </div>
+        {% endif %}
         <div class="ability-tags">
             Tags:
             {% for tag in ability.tags %}

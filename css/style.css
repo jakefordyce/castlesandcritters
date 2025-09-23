@@ -45,3 +45,11 @@ a:visited {
 .hidden {
     display: none;
 }
+
+td {
+    border: 1px solid #ddd;
+}
+
+td {
+    padding: 2px;
+}
