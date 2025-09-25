@@ -1,0 +1,215 @@
+{
+  "abilities": [
+    {
+      "name": "Life Link",
+      "text": "You and your target are both affected by the next attack or spell that hits either of you. Effect ends after 1 hour or if you and your target are 1 mile apart.",
+      "cost": 1,
+      "type": 2,
+      "actions": 1,
+      "range": 1,
+      "school": 4,
+      "requires": "2 Spirit"
+    },
+    {
+      "name": "Sleep",
+      "text": "Roll [Magic] vs the target's Defense. If your roll is higher the target falls asleep.",
+      "cost": 0,
+      "type": 2,
+      "actions": 2,
+      "range": 10,
+      "school": 0,
+      "requires": "2 Intelligence",
+      "masteries": [
+        {
+          "name": "Lullaby",
+          "text": "If the spell fails to put the target to sleep the power of the next cast is increased by 1. This effect stacks up to the caster's Intelligence."
+        }
+      ]
+    },
+    {
+      "name": "Daze",
+      "text": "Roll [Magic] vs the target's Resist. If your roll is higher the target is stunned.",
+      "cost": 0,
+      "type": 2,
+      "actions": 2,
+      "range": 10,
+      "school": 0,
+      "requires": "2 Intelligence",
+      "masteries": [
+        {
+          "name": "Stagger",
+          "text": "When the target breaks free from the Daze effect their movement is reduced by half until the end of their next turn."
+        }
+      ]
+    },
+    {
+      "name": "Censure",
+      "text": "Roll [Healing] vs the target's Resist. If your roll is higher the target is stunned.",
+      "cost": 0,
+      "type": 2,
+      "actions": 2,
+      "range": 10,
+      "school": 3,
+      "requires": "2 Spirit",
+      "masteries": [
+        {
+          "name": "Spirit Shackle",
+          "text": "You can temporarily sacrifice some of your Healing to increase the power of Censure. Reduce your healing by up to 5 to increase the power of Censure by the same amount. The amount comes back at the end of your next turn."
+        }
+      ]
+    },
+    {
+      "name": "Healing Surge",
+      "text": "Heal target for [Healing]. The target pays the Energy cost instead of the caster.",
+      "cost": 1,
+      "type": 2,
+      "actions": 1,
+      "range": 1,
+      "school": 3,
+      "requires": "1 Spirit",
+      "masteries": [
+        {
+          "name": "Surge of Power",
+          "text": "The target's Powers are increased by 2 for 1 round."
+        }
+      ]
+    },
+    {
+      "name": "Smite",
+      "text": "Attack an enemy for [Might] Holy damage. This cannot be blocked.",
+      "cost": 1,
+      "type": 1,
+      "actions": 1,
+      "weapon": 1,
+      "requires": "1 Strength and 1 Spirit",
+      "masteries": [
+        {
+          "name": "Retribution",
+          "text": "The power of your next Smite is increased by 1 each time an ally within 6 squares takes direct damage from an attack or harmful spell."
+        },
+        {
+          "name": "Righteousness",
+          "text": "The power of Smite is increased by 2 when used against undead or demons."
+        }
+      ]
+    },
+    {
+      "name": "Avatar",
+      "text": "Become an avatar of your god sacrificing 1 Energy per round until your Energy is gone. During this time you can cast healing spells for no Energy cost.",
+      "type": 4,
+      "requires": "3 Spirit",
+      "masteries": [
+        {
+          "name": "Martyr",
+          "text": "While Avatar is active if an ally within 6 squares takes damage you may take some or all of that damage instead. The amount is chosen by you."
+        }
+      ]
+    },
+    {
+      "name": "Berzerker Rage",
+      "text": "You get 1 extra action each turn. You cannot cast spells while enraged. You are immune to mind altering (fear, sleep, etc) effects while enraged. Berserker Rage costs 1 Energy per turn and lasts until you reach 0 Energy or combat ends.",
+      "type": 1,
+      "cost": 1,
+      "actions": 1,
+      "weapon": 0,
+      "requires": "3 Strength",
+      "masteries": [
+        {
+          "name": "Ignore Pain",
+          "text": "Armor and Resist are increased by 1 while Enraged."
+        },
+        {
+          "name": "Growing Fury",
+          "text": "Your Might is increased by 1 each time you are targeted with an attack or spell. This effect stacks and lasts until the end of your next turn."
+        }
+      ]
+    },
+    {
+      "name": "Inspirations",
+      "text": "Select a daily inspiration which provides a buff to you for 1 day. You may only have 1 Inspiration active each day.\n Fervor: Increases all Powers by 1.\n Devotion: Increases Armor and Resist by 1.",
+      "type": 4,
+      "masteries": [
+        {
+          "name": "Inspiring Presence",
+          "text": "Your Inspirations now affect all allies within 5 squares."
+        },
+        {
+          "name": "Inner Inspiration",
+          "text": "The bonus from your inspirations is increased to +2."
+        }
+      ]
+    },
+    {
+      "name": "Holy Shield",
+      "text": "Increase a shield's block by 2 and makes it unbreakable and immune to disarm effects. Lasts 1 day.",
+      "cost": 0,
+      "type": 2,
+      "actions": 2,
+      "range": 1,
+      "school": 3,
+      "requires": "2 Spirit",
+      "masteries": [
+        {
+          "name": "Beacon of Light",
+          "text": "A blessed shield also increases the power of healing spells targeting its user by 2."
+        },
+        {
+          "name": "Protection From Corruption",
+          "text": "A blessed shield also increases the user's Resist by 2."
+        }
+      ]
+    },
+    {
+      "name": "Cleanse",
+      "text": "Attempt to cleanse your target of poisons and diseases. Roll [Healing]. If the result is higher than the power of a poison or disease affecting your target then that poison or disease is removed.",
+      "cost": 0,
+      "type": 2,
+      "actions": 1,
+      "range": 5,
+      "school": 5,
+      "requires": "1 Spirit",
+      "masteries": [
+        {
+          "name": "Cleansing rejuvination",
+          "text": "When you cast a healing spell on someone you may also cast Cleanse on them as part of the same action."
+        }
+      ]
+    },
+    {
+      "name": "Goodberry",
+      "text": "Create a berry infused with healing energy. Heals for (creator's) [Healing] when eaten. This Energy does not return until the berry has been used or until you decide to let the berry's healing energy go, turning it into a regular berry. Eating a goodberry counts as using an item",
+      "cost": 1,
+      "type": 2,
+      "actions": 1,
+      "range": 1,
+      "school": 5,
+      "requires": "1 Spirit",
+      "masteries": [
+        {
+          "name": "Extra Juicy",
+          "text": "Goodberries can now be squished against someone to activate their healing. This counts as using an item. If the berry is eaten instead of squished the healing power is increased by 2."
+        }
+      ]
+    },
+    {
+      "name": "Bloom",
+      "text": "Imbue a 2x2 area with healing energies. Allies standing in the area take 1 ongoing healing each round.",
+      "cost": 1,
+      "type": 2,
+      "actions": 2,
+      "range": 5,
+      "school": 5,
+      "requires": "2 Spirit",
+      "masteries": [
+        {
+          "name": "Living Bloom",
+          "text": "Enemies standing in your bloom are rooted in place. The roots start at 1 hp and grow 1 hp stronger each round."
+        },
+        {
+          "name": "Thorny Vegetation",
+          "text": "Enemies that make melee attacks against someone standing in your Bloom take 1 damage."
+        }
+      ]
+    }
+  ]
+}
