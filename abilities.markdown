@@ -27,6 +27,7 @@ Filter the list:
     <option value="shadow">Shadow</option>
     <option value="arcane">Arcane</option>
     <option value="cold">Cold</option>
+    <option value="nature">Nature</option>
     <option value="shout">Shout</option>
     <option value="metamagic">Meta Magic</option>
 </select>
