@@ -314,7 +314,6 @@
     {
       "name": "Charge",
       "text": "Move up to 5 squares in a straight line to an enemy and attack them with a melee weapon.",
-      "cost": 0,
       "actions": 1,
       "tags": ["Target", "Technique"],
       "masteries": [
@@ -460,6 +459,10 @@
         {
           "name": "Overheat",
           "text": "Each cast of Burning Hands reduces the cost of Fireball by 1. The cost cannot be reduced below 0."
+        },
+        {
+          "name": "Lingering Flame",
+          "text": "The damage of your next Fire spell is increased by 2 after casting this spell."
         }
       ]
     },
@@ -488,52 +491,52 @@
     },
     {
       "name": "Smart",
-      "text": "Magic increased by 1.",
+      "text": "Magic increased by 1. This is intended to be a level 1 Ability that replaces the old racial modifiers.",
       "tags": ["Passive"]
     },
     {
       "name": "Athletic",
-      "text": "Attack increased by 1.",
+      "text": "Attack increased by 1. This is intended to be a level 1 Ability that replaces the old racial modifiers.",
       "tags": ["Passive"]
     },
     {
       "name": "Caring",
-      "text": "Healing increased by 1.",
+      "text": "Healing increased by 1. This is intended to be a level 1 Ability that replaces the old racial modifiers.",
       "tags": ["Passive"]
     },
     {
       "name": "Tough",
-      "text": "Your max Health is increased by 2.",
+      "text": "Your max Health is increased by 2. This is intended to be a level 1 Ability that replaces the old racial modifiers.",
       "tags": ["Passive"]
     },
     {
       "name": "Spiritual",
-      "text": "Your max Energy is increased by 1.",
+      "text": "Your max Energy is increased by 1. This is intended to be a level 1 Ability that replaces the old racial modifiers.",
       "tags": ["Passive"]
     },
     {
       "name": "Brawny",
-      "text": "Attack increased by 2. Magic and Healing decreased by 1.",
+      "text": "Attack increased by 2. Magic and Healing decreased by 1. This is intended to be a level 1 Ability that replaces the old racial modifiers.",
       "tags": ["Passive"]
     },
     {
       "name": "Bookworm",
-      "text": "Magic increased by 2. Attack and Healing decreased by 1.",
+      "text": "Magic increased by 2. Attack and Healing decreased by 1. This is intended to be a level 1 Ability that replaces the old racial modifiers.",
       "tags": ["Passive"]
     },
     {
       "name": "Naive",
-      "text": "Healing increased by 2. Attack and Magic decreased by 1.",
+      "text": "Healing increased by 2. Attack and Magic decreased by 1. This is intended to be a level 1 Ability that replaces the old racial modifiers.",
       "tags": ["Passive"]
     },
     {
       "name": "Tank",
-      "text": "Max Health increased by 4. Max Energy decreased by 1.",
+      "text": "Max Health increased by 4. Max Energy decreased by 1. This is intended to be a level 1 Ability that replaces the old racial modifiers.",
       "tags": ["Passive"]
     },
     {
       "name": "Glass Cannon",
-      "text": "Energy increased by 2. Max Health decreased by 2.",
+      "text": "Energy increased by 2. Max Health decreased by 2. This is intended to be a level 1 Ability that replaces the old racial modifiers.",
       "tags": ["Passive"]
     },
     {
@@ -609,6 +612,170 @@
         {
           "name": "Surge of Power",
           "text": "The target's Attack and Magic are increased by 2 until the end of their next turn."
+        }
+      ]
+    },
+    {
+      "name": "Desperate Heal",
+      "text": "The target is healed for [Healing] + 1D10. The power of this spell is reduced by 2 each time it is cast. The power resets at the end of a battle.",
+      "actions": 1,
+      "range": 5,
+      "tags": ["Spell", "Heal", "Holy"]
+    },
+    {
+      "name": "Touch of the Martyr",
+      "text": "Sacrifice your own Health to heal the target. Roll 1D4 healing for each 1 Health sacrificed.",
+      "actions": 1,
+      "range": 1,
+      "tags": ["Spell", "Heal", "Holy"]
+    },
+    {
+      "name": "Steady Shot",
+      "text": "Attack the enemy for [Attack] damage. The crit range of this attack is doubled. Requires a ranged weapon.",
+      "actions": 1,
+      "range": 10,
+      "tags": ["Technique", "Ranged"]
+    },
+    {
+      "name": "Roll the Bones",
+      "text": "When using a Technique, you can increase the crit range by 1 - 4. For each point that you expand the crit range, the miss range of that attack will increase by 2.",
+      "tags": ["Talent"]
+    },
+    {
+      "name": "Sleep",
+      "text": "Roll [Magic] vs the target's Resist. If your roll is higher, the target falls asleep.",
+      "actions": 1,
+      "range": 10,
+      "tags": ["Spell", "Arcane"],
+      "masteries": [
+        {
+          "name": "Lullaby",
+          "text": "If the spell fails to put the target to sleep the power of the next cast is increased by 1. This effect stacks up to +5."
+        }
+      ]
+    },
+    {
+      "name": "Daze",
+      "text": "Roll [Magic] vs the target's Resist. If your roll is higher the target is stunned.",
+      "actions": 1,
+      "range": 10,
+      "tags": ["Spell", "Arcane"],
+      "masteries": [
+        {
+          "name": "Stagger",
+          "text": "When the target breaks free from the Daze effect, their movement is reduced by half until the end of their next turn."
+        }
+      ]
+    },
+    {
+      "name": "Berzerker Rage",
+      "text": "Until the end of battle or the character reaches 0 Health, they get 1 extra action each turn, can only use Techniques, and are immune to Fear effects. This costs all remaining Energy.",
+      "tags": ["Talent"],
+      "masteries": [
+        {
+          "name": "Ignore Pain",
+          "text": "Reduce all damage taken by 1 while raging."
+        },
+        {
+          "name": "Seethe",
+          "text": "When an enemy targets you with an Ability, the damage of your next Technique is increased by 1."
+        },
+        {
+          "name": "Frenzied Regeneration",
+          "text": "Recover 1D4 Health each turn."
+        }
+      ]
+    },
+    {
+      "name": "Summon Bone Golem",
+      "text": "Summons a Bone Golem with [Magic] + 1D10 Health. The summoner can instruct it once per turn to attack for [Magic] + 1D10. Each attack costs 1 Energy. Can provide bones for Bone spells. Doing so reduces its Health by 1D6.",
+      "actions": 1,
+      "range": 1,
+      "tags": ["Spell", "Summon", "Shadow"],
+      "masteries":[
+        {
+          "name": "Excess Bones",
+          "text": "Provides 1 free bone per turn."
+        }
+      ]
+    },
+    {
+      "name": "Bone Spear",
+      "text": "Deals [Magic] + 1D10 damage to a target. It can use bones within 10 squares, increasing the damage by 1 per bone used, max of 5.",
+      "actions": 1,
+      "range": 10,
+      "tags": ["Spell", "Shadow"],
+      "masteries":[
+        {
+          "name": "Sharp Edge",
+          "text": "Hits all targets in a straight line."
+        },
+        {
+          "name": "Serrated Edge",
+          "text": "Increase critical damage by 1D10."
+        }
+      ]
+    },
+    {
+      "name": "Bone Shield",
+      "text": "Summons a shield with [Magic] Bones. Each bone reduces the damage of an attack by 1, using the bone in the process. The bones may be used by Bone spells.",
+      "actions": 1,
+      "range": 1,
+      "tags": ["Spell", "Shadow", "Buff"],
+      "masteries":[
+        {
+          "name": "Hardened Bones",
+          "text": "Increase the damage reduction to 1D4."
+        },
+        {
+          "name": "Rib Cage",
+          "text": "The caster can use multiple bones on 1 attack."
+        }
+      ]
+    },
+    {
+      "name": "Bone Spikes",
+      "text": "Deals [Magic] damage to a 2x2 area. Area is increased by 1 per bone used. Max area 6x6.",
+      "actions": 1,
+      "range": 10,
+      "tags": ["Spell", "Shadow"],
+      "masteries":[
+        {
+          "name": "Nail to the Floor",
+          "text": "Enemies that take damage are also rooted in place. Each root has Health equal to the damage taken."
+        }
+      ]
+    },
+    {
+      "name": "Bone Wall",
+      "text": "Creates a wall that blocks movement and attacks. The Health of the wall is 1D4 for each bone pulled. The wall can be spread over multiple squares. Each square must have 1 Health.",
+      "actions": 1,
+      "range": 10,
+      "tags": ["Spell", "Shadow"],
+      "masteries":[
+        {
+          "name": "Jagged",
+          "text": "Melee attacks cause the attacker to take 1 damage."
+        },
+        {
+          "name": "Sturdy",
+          "text": "Increase the Health of the wall to 1D6 for each bone."
+        }
+      ]
+    },
+    {
+      "name": "Smite",
+      "text": "Attack an enemy for Holy damage. This is defended with the enemy's resist.",
+      "actions": 1,
+      "tags": ["Technique", "Holy"],
+      "masteries": [
+        {
+          "name": "Retribution",
+          "text": "The power of your next Smite is increased by 1 each time an ally within 6 squares takes direct damage from an attack or harmful spell."
+        },
+        {
+          "name": "Righteousness",
+          "text": "The power of Smite is increased by 2 when used against undead or demons."
         }
       ]
     }

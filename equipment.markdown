@@ -16,13 +16,12 @@ title: Equipment
 | Greatsword   | 2      | 4      | Melee Heavy       | Crit range +2 |
 | HandAxe      | 1      | 3      | Melee Heavy       | |
 | BattleAxe    | 2      | 5      | Melee Heavy       | |
-| Dagger       | 1      | 2      | Melee Light       | Crit Damage X3 |
 | Flail        | 1      | 2      | Melee Heavy       | Luck Roll +1 |
 | Bastard Sword| 1 or 2 | 2 or 4 | Melee Heavy       |  |
-| Rapier       | 1      | 2      | Melee Heavy Light | |
+| Short Sword  | 1      | 2      | Melee Heavy Light | |
 | Morning Star | 1      | 2      | Melee Heavy       | Armor Penetration +1 |
-| Mace         | 1      | 2      | Melee Heavy       | +2 Healing |
-| Great Hammer | 2      | 4      | Melee Heavy       | +4 Healing |
+| Hammer       | 1      | 2      | Melee Heavy Focus | +2 Healing |
+| Great Hammer | 2      | 4      | Melee Heavy Focus | +4 Healing |
 | Scimitar     | 1      | 2      | Melee Heavy Focus | +2 Magic |
 | Falchion     | 2      | 4      | Melee Heavy Focus | +4 Magic |
 | Broad Sword  | 1      | 2      | Melee Heavy       | +1 Armor |
@@ -40,11 +39,35 @@ title: Equipment
 | Crystal Ball| 1      | 2       | Focus   | Armor Penetration +1 |
 | Scepter     | 1      | 2       | Focus   | +2 Healing |
 | Candle      | 1      | 2       | Focus   | +1 Resist |
+| Bone Shield | 1      | 2       | Focus   | +1 Armor |
 
 ### Healing Weapons
 
+| Weapon       | Hands  | Healing  | Tags  | Special  |
+|--------------|--------|----------|-------|----------|
+| Healing Staff| 2      | 5        | Focus | |
+| Rosary Beads | 1      | 2        | Focus | +1 Resist |
+| Light Shield | 1      | 2        | Focus | +1 Armor |
+| Mace         | 1      | 3        | Focus | |
 
-### Light Weapons and Ranged Weapons
+
+### Light Weapons
+
+| Weapon       | Hands  | Attack | Tags        | Special |
+|--------------|--------|--------|-------------|---------|
+| Rapier       | 1      | 3      | Melee Light | |
+| Dagger       | 1      | 2      | Melee Light | Crit Damage X3 |
+| War Pick     | 1      | 2      | Melee Light | Crit Range +2 |
+
+
+### Ranged Weapons
+
+| Weapon      | Hands  | Attack  | Tags   | Range   | Special |
+|-------------|--------|---------|--------|---------|---------|
+| Long Bow    | 2      | 4       | Ranged | 12      | |
+| Short Bow   | 2      | 4       | Ranged | 10      | Crit Range +2 |
+| Crossbow    | 2      | 5       | Ranged | 10      | |
+| War Bow     | 2      | 4       | Ranged | 10      | Crit Damage x3 |
 
 
 ### Armor
@@ -60,8 +83,11 @@ title: Equipment
 
 ### Shields
 
-| Shield | Defense | Penalty |
-|--------|---------|---------|
-| Buckler| 2 Armor | |
-| Wooden | 2 Armor 2 Resist| |
-| Steel  | 4 Armor | |
+| Shield | Defense          | Penalty |
+|--------|------------------|---------|
+| Buckler| 1 Armor 1 Resist | |
+| Wooden | 2 Armor          | |
+| Steel  | 4 Armor 2 Resist | 2 |
+
+
+* Note: Items can be substituted for style reasons. If a player says, "I really want to heal, but I don't want to use a mace and rosary beads," that's no problem. Have them use whatever they feel comfortable with instead. If they use a magical branch that they found instead of a mace, and a bouquet of roses instead of rosary beads, that's cool as long as they are having fun.

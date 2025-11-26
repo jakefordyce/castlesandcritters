@@ -16,6 +16,7 @@ Filter the list:
     <option value="spell">Spell</option>
     <option value="passive">Passive</option>
     <option value="talent">Talent</option>
+    <option value="ranged">Ranged</option>
     <option value="heal">Heal</option>
     <option value="self">Self</option>
     <option value="target">Target</option>
